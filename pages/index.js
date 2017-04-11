@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Officers from '../components/Officers'
 
 const IndexComponent = () => (
   <div>
@@ -19,8 +20,8 @@ const IndexComponent = () => (
     <h1>
       Hello World!
     </h1>
+    <Officers />
   </div>
 );
 
 export default IndexComponent;
-

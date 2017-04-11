@@ -1,0 +1,27 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: 'PT Sans';
+	font-size: 18px;
+}
+.officers {
+	padding: 6vh 16vw;
+	justify-content: center;
+	position: relative;
+}
+.photo {
+	margin: 15px;
+	cursor: pointer;
+	overflow: hidden;
+	width: 18vw;
+	height: 18vw;
+	img {
+		width: 100%;
+		transition: transform 500ms ease;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}

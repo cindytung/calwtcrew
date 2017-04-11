@@ -37,4 +37,3 @@ IndexContainer.defaultProps = {
 };
 
 export default IndexContainer;
-
