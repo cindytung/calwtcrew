@@ -39,3 +39,13 @@ body {
     font-weight: 300;
   }
 }
+
+@media screen and (max-width: 740px) {
+  .page__header {
+    font-size: 40px;
+  }
+
+  .section__header {
+    font-size: 25px;
+  }
+}

@@ -1,44 +1,26 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 
-class Photo extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      mouseOver: false,
-    };
-    this._mouseEnter = this._mouseEnter.bind(this);
-    this._mouseLeave = this._mouseLeave.bind(this);
-  }
-
-  _mouseEnter(e) {
-    e.preventDefault();
-    if (this.state.mouseOver === false) {
-      this.setState({
-        mouseOver: true,
-      });
-    }
-  }
-
-  _mouseLeave(e) {
-    e.preventDefault();
-    if (this.state.mouseOver === true) {
-      this.setState({
-        mouseOver: false,
-      });
-    }
-  }
-
-  render() {
-    return (
-      <div className="photo">
-        <img
-          src={this.props.data.image}
-          alt={this.props.data.name}
-        />
+const Photo = (props) => (
+  <div>
+    <div className="photo">
+      <img
+        src={props.data.image}
+        alt={props.data.name}
+      />
+    </div>
+    <div className="photo__detail">
+      <div className="photo__detail--name">
+        {props.data.name}
       </div>
-    );
-  }
-}
+      <div className="photo__detail--position">
+        {props.data.position}
+      </div>
+      <div className="photo__detail--email">
+        {props.data.email}
+      </div>
+    </div>
+  </div>
+);
 
 Photo.propTypes = {
   data: React.PropTypes.arrayOf(PropTypes.shape({
