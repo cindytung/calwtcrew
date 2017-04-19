@@ -9,7 +9,6 @@ import amos from '../assets/images/officers/amos.png';
 import reni from '../assets/images/officers/reni.png';
 import peter from '../assets/images/officers/peter.jpg';
 import colby from '../assets/images/officers/colby.jpg';
-// import duck from '../assets/images/officer_test.png';
 
 const Officers = () => {
   const people = [
