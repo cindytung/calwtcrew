@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 import Officers from '../components/Officers';
 import Coaches from '../components/Coaches';
