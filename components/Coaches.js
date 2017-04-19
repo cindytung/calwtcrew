@@ -1,6 +1,7 @@
 import React from 'react';
 import Photo from '../components/Photo';
-import duck from '../assets/images/officer_test.png';
+import marjorie from '../assets/images/marjorie.jpg';
+import douglas from '../assets/images/douglas.jpg';
 
 const Coaches = () => {
   const people = [
@@ -8,13 +9,13 @@ const Coaches = () => {
       name: 'Marjorie Setchko',
       position: 'Women\'s Head Coach',
       email: '',
-      image: duck,
+      image: marjorie,
     },
     {
       name: 'Douglas Perez',
       position: 'Men\'s Head Coach',
       email: '',
-      image: duck,
+      image: douglas,
     },
   ];
 

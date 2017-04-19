@@ -21,25 +21,47 @@ body {
 		}
 
 		.photo {
-			width: 100%;
-      height: 100%;
-			overflow: hidden;
+			// width: 100%;
+      // height: 100%;
+			// overflow: hidden;
+
+			width: 250px;
+	    height: 250px;
+	    overflow: hidden;
+	    margin: 10px;
+	    position: relative;
+
+			&::after {
+		    content: "";
+		    position: absolute;
+		    opacity: 0;
+		    top: 0;
+		    left: 0;
+		    background: black;
+		    height: 250px;
+		    width: 250px;
+		    transition: opacity 550ms;
+		  }
+
+		  &:hover {
+		    &::after {
+		      opacity: 0.5;
+		    }
+		  }
 
 			img {
-				width: 250px;
-        height: 250px;
-				// transition: transform 500ms ease;
-				// &:hover {
-				// 	transform: scale(1.1);
-				// }
+				// width: 250px;
+        // height: 250px;
+
+				position: absolute;
+			  left: -1000%;
+			  right: -1000%;
+			  top: -1000%;
+			  bottom: -1000%;
+			  margin: auto;
+			  min-height: 100%;
+			  min-width: 100%;
 			}
 		}
 	}
 }
-
-// .coaches {
-// 	img {
-// 		width: 250px;
-// 		height: 250px;
-// 	}
-// }
