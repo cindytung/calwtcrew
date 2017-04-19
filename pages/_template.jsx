@@ -7,21 +7,6 @@ import '../css/base.scss';
 
 const IndexContainer = ({ children }) => (
   <div>
-    <Headroom
-      style={{
-        background: '#252525',
-      }}
-    >
-      <Link
-        to={prefixLink('/')}
-        style={{
-          color: 'white',
-          textDecoration: 'none',
-        }}
-      >
-        Title
-      </Link>
-    </Headroom>
     <div>
       {children}
     </div>

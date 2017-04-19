@@ -11,7 +11,14 @@
 }
 
 body {
+  font-family: 'Oswald', sans-serif;
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.section__header {
+	font-size: 50px;
+	text-align: center;
+	font-weight: bold;
 }
