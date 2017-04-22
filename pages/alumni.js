@@ -1,4 +1,5 @@
 import React from 'react';
+import donate from '../assets/images/donate-now.png';
 
 const AlumniComponent = () => (
   <div>
@@ -23,6 +24,9 @@ const AlumniComponent = () => (
         immediate financial needs. Click the button to donate now online——it‘s
         quick and easy!
       </p>
+      <a href="https://give.berkeley.edu/egiving/index.cfm?Fund=FU0820000" rel="noopener noreferrer" target="_blank">
+        <img id="donate-now" alt="" src={donate} />
+      </a>
       <p>
         2) Donate to the Alumni association——this will help the team fund its
         long-term goals. Please
