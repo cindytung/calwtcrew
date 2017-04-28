@@ -18,8 +18,6 @@ export default class Navbar extends Component {
 
   _handleNavOpen(e) {
     e.preventDefault();
-    /* eslint-disable no-console */
-    console.log('whatthefuck');
     this.setState({
       open: !this.state.open,
     });
@@ -39,7 +37,7 @@ export default class Navbar extends Component {
         >
           <div
             className={classNames('navbar', {
-              'nav--open': this.state.open,
+              'navbar--open': this.state.open,
             })}
           >
             <div className="logo">
@@ -48,26 +46,36 @@ export default class Navbar extends Component {
               </Link>
             </div>
             <div
-              className={classNames('nav__hamburger', {
-                'nav__hamburger--active': this.state.open,
+              className={classNames('links', 'navbar__hamburger', {
+                'navbar__hamburger--active': this.state.open,
               })}
               onClick={this._handleNavOpen}
             >
-              <div className="hamburger__bar bar--1" />
-              <div className="hamburger__bar bar--2" />
+              <div className="hamburger__bar bar" />
+              <div className="hamburger__bar bar" />
+              <div className="hamburger__bar bar" />
             </div>
             <div className="links">
               <Link to="/about/" className="link">
                 ABOUT US
               </Link>
+              <div className="roster">
+                ROSTER
+                <Link to="/roster/men/" className="link__navbar--open">
+                  MEN&#39;S
+                </Link>
+                <Link to="/roster/men/" className="link__navbar--open">
+                  WOMEN&#39;S
+                </Link>
+              </div>
               <div className="dropdown">
                 <button className="dropbtn">ROSTERS</button>
                 <div className="dropdown__content">
-                  <Link to="/mens-roster/" className="link">
+                  <Link to="/roster/men/" className="link">
                     <div className="dropdown__link">MEN&#39;S ROSTER</div>
                   </Link>
                   <br />
-                  <Link to="/womens-roster/" className="link">
+                  <Link to="/roster/women/" className="link">
                     <div className="dropdown__link">WOMEN&#39;S ROSTER</div>
                   </Link>
                 </div>
