@@ -1,6 +1,10 @@
 .navbar {
   margin-right: 5px;
 
+  .nav__hamburger {
+    display:none;
+  }
+
   .logo {
     display: inline;
 
@@ -61,5 +65,61 @@
 
   .dropdown:hover .dropdown__content {
     display: block;
+  }
+}
+
+@media (max-width: 890px) {
+
+  .navbar {
+
+    .links {
+      display: none;
+    }
+    // .links {
+    //   text-align: right;
+    //   float: right;
+    //   margin-top: 25px;
+    // }
+
+    .nav__hamburger {
+      display: inline-block;
+      float: right;
+      height: 40px;
+      width: 24px;
+      margin-top: 5px;
+      margin-right: 10px;
+
+      .hamburger__bar {
+        margin-top: 15px;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: black;
+        transition: transform 0.25s;
+
+        &.bar--1 {
+          top: 10px
+        }
+
+        &.bar--2 {
+          top: 20px;
+        }
+      }
+
+      &.nav__hamburger--active {
+
+        .hamburger__bar {
+          &.bar--1 {
+            top: 9px;
+            transform: rotate(45deg);
+          }
+
+          &.bar--2 {
+            top: 9px;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
   }
 }
