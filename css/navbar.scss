@@ -107,6 +107,11 @@
           color: black;
           margin-top: 15px;
           font-weight: lighter;
+
+          &:hover {
+            color: #093A86;
+            text-decoration: underline;
+          }
         }
       }
 

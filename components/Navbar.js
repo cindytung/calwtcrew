@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Headroom from 'react-headroom';
-// import Button from 'react-button';
 import classNames from 'classnames';
 import logo from '../assets/images/logo.png';
 
