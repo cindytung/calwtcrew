@@ -1,7 +1,9 @@
 @import './vendors/normalize.css';
 @import 'aboutme.scss';
 @import 'alumni.scss';
+@import 'home.scss';
 @import 'navbar.scss';
+@import 'schedule.scss';
 
 *,
 *:after,
@@ -17,6 +19,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  margin-bottom: 24px;
 }
 
 .page__header {
@@ -33,6 +36,8 @@ body {
 }
 
 .section__content {
+  margin: 3%;
+
   p {
     text-align: justify;
     margin: 1% 13%;
@@ -41,13 +46,23 @@ body {
     font-weight: 300;
 
     a:link {
-      color: blue;
-      text-decoration: none;
+      color: #093A86;
+      font-weight: bolder;
     }
 
     a:hover {
       color: black;
     }
+  }
+}
+
+.centered__content {
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .page__header {
+    margin-top: 50px;
   }
 }
 
