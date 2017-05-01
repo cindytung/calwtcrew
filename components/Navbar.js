@@ -64,7 +64,7 @@ export default class Navbar extends Component {
                     name="facebook"
                   />
                 </a>
-                <a href="http://instagram.com/cal_lights" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/cal_lightweights/" target="_blank" rel="noopener noreferrer">
                   <FontAwesome
                     className="ig__icon"
                     name="instagram"
