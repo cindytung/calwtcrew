@@ -72,7 +72,7 @@ export default class Navbar extends Component {
                 </a>
               </div>
               <Link to={prefixLink('/about/')} className="link">
-                ABOUT US
+                ABOUT
               </Link>
               <div className="roster">
                 ROSTER
