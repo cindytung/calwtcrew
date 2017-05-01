@@ -19,13 +19,22 @@
 
   &:hover {
     color: #093A86;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .schedule__header {
+    font-size: 25px;
   }
 }
 
 .current__container, .fa15__container, .sp15__container {
   &.current--close, &.fa15--close, &.sp15--close  {
     .event__header, .result__content {
-      display: none;
+      max-height: 0px;
+      opacity: 0;
+      transition: max-height 2s;
     }
   }
 
@@ -41,6 +50,11 @@
       font-size: 14px;
       text-align: center;
       font-weight: 400;
+    }
+
+    .event__header, .result__content {
+      max-height: 1000px;
+      transition: max-height 2s;
     }
 
     @media screen and (max-width: 800px) {
