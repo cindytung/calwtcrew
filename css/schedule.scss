@@ -34,7 +34,7 @@
     .event__header, .result__content {
       max-height: 0px;
       opacity: 0;
-      transition: max-height 2s;
+      transition: max-height .25s ease;
     }
   }
 
@@ -54,7 +54,7 @@
 
     .event__header, .result__content {
       max-height: 1000px;
-      transition: max-height 2s;
+      transition: max-height .25s ease;
     }
 
     @media screen and (max-width: 800px) {
